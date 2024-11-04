@@ -4,14 +4,13 @@ import datetime
 import itertools
 import time
 
-START_TIMESTAMP = 1325440800
+START_TIMESTAMP = 1293991200
 INPUT_FILENAME = "input.txt"
 DUMMY_FILENAME = "dummy.txt"
 SECONDS_IN_DAY = 60 * 60 * 24
 
 
 def main():
-    os.remove(DUMMY_FILENAME)
     open(DUMMY_FILENAME, "w").close()
 
     data = processInputData(INPUT_FILENAME)
